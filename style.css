@@ -1,0 +1,817 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    background-color: #181e25;
+    color: #ffffff;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-container {
+    max-width: 1920px;
+    min-width: 479px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#main-header {
+    display: flex;
+    max-width: 100%;
+    width: 1000px;
+}
+
+.main-header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.colored-text {
+    color: #00a8dd;
+}
+
+.img-logo-header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.img-logo-header img {
+    width: 40px;
+    max-width: 100%;
+    padding: 7px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.header-title {
+    text-transform: uppercase;
+    gap: 10px;
+}
+
+.information {
+    font-size: 19.2px;
+    padding-bottom: 15px;
+}
+
+.intro {
+    font-size: 19.2px;
+    padding-bottom: 25px;
+}
+
+
+.list-comments {
+   display: flex;
+}
+
+.list-comments li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icons {
+    font-size: 13.3px;
+    max-width: 100%;
+}
+
+.list-content {
+    max-width: 100%;
+}
+
+.list-content p{
+    font-size: 13.3px;
+}
+
+.btn-primary {
+    max-width: 100%;
+    width: 350px;
+    height: 40px;
+    margin-top: 25px;
+    color: #fff;
+    background-color: #00a8dd;
+    border-radius: 10px;
+    border: 1px solid #005982;
+    box-shadow: 2px 2px 1px #004e69, 2px 2px 1px #004e69;
+    font-size: 28px;
+    transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.btn-primary i {
+    font-size: 23px;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    box-shadow: none;
+    transform: translateX(2px);
+}
+
+
+#main-header-panel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 35px;
+    width: 1000px;
+    padding-left: 30px;
+    gap: 10px;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    background-color: #2b323c;
+    border-radius: 20px;
+    margin: 2px;
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 10px;
+}
+
+.icon {
+    padding-bottom: 5px;
+}
+
+.title-large {
+    font-size: 16px;
+    color: #fff;
+}
+
+.lessons {
+    font-size: 13.3px;
+    text-transform: uppercase;
+}
+
+.list-tasks {
+    width: 100%;
+}
+
+.list-tasks li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.list-icons {
+    width: 20px;
+    max-width: 100%;
+    padding: 2px;
+}
+
+.tasks-steps {
+    font-size: 12px;
+    padding-top: 3px;
+    max-width: 600px;
+}
+
+.notification {
+    text-align: center;
+    font-size: 13.3px;
+    margin-top: 50px;
+    width: 100%;
+    padding: 30px 200px;
+    color: #a5a5a5;
+    background-color: #10151b;
+}
+
+#main-content {
+    display: flex;
+    max-width: 100%;
+    width: 1000px;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    max-width: 100%;
+    text-align: center;
+    margin: 5px 200px;
+    margin-top: 60px;
+}
+
+.steps {
+    max-width: 100%;
+    background-color: #2b323c;
+    border-radius: 15px;
+    padding: 40px 80px;
+}
+
+.list-steps {
+    display: flex;
+    gap: 100px;
+}
+
+.step-title, .step-subtitle {
+    text-align: center;
+    font-size: 19.2px;
+}
+
+.step-description {
+    text-align: center;
+}
+
+.emphasis {
+    font-size: 13.9px;
+}
+
+.main-panel {
+   display: flex;
+   max-width: 100%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 800px;
+    margin-top: 60px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    background-color: #2b323c;
+    border-radius: 15px;
+}
+
+.profile-title {
+    font-size: 23px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.profile-apresentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1d2731;
+    gap: 12px;
+}
+
+.apresentation {
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    padding-bottom: 5px;
+}
+
+.profile-name {
+    font-size: 23px;
+}
+
+.profile-description {
+    text-align: center;
+    padding: 7px 30px 30px 30px;
+}
+
+.description {
+    font-size: 18.4px;
+}
+
+.main-panel-secondary {
+    max-width: 100%;
+    width: 900px;
+}
+
+.learning {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    background-color: #2b323c;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.header-panel-secondary {
+    display: flex;
+    align-items: center;
+}
+
+.icon-python {
+   padding: 7px 10px 0 0;
+}
+
+.learning-description {
+    font-size: 19.2px;
+}
+
+.list-learning {
+    font-size: 16.5px;
+}
+
+.list-learning li{
+    position: relative;
+    padding-left: 13px;
+}
+
+.list-learning li::before{
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: #fff;
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    height: 150px;
+    margin-bottom: 80px;
+    padding: 20px;
+    background-color: #005982;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+.alert-title {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    width: 200px;
+}
+
+.alert-description {
+   font-size: 23px;
+}
+
+.btn-secondary {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    width: 235px;
+    height: 38px;
+    color: #fff;
+    background-color: #2b323c;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 1px #000, 2px 2px 1px #000;
+    gap: 7px;
+    padding-left: 10px;
+    transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.btn-secondary:hover{
+    cursor: pointer;
+    box-shadow: none;
+    transform: translateX(2px);
+}
+
+.btn-secondary p {
+    font-size: 23px;
+}
+
+.btn-secondary i {
+    font-size: 16px;
+}
+
+#footer {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #2b323c;
+    padding: 30px;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.img-logo-footer img {
+    max-width: 100%;
+    width: 35px;
+    padding-top: 4px;
+}
+
+.law {
+    padding: 10px 0 0 5px;
+}
+
+.law a {
+    padding: 0 8px 0 8px;
+    color: #fff;
+    transition: text-decoration 0.2s ease-in-out;
+}
+
+.law a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    #main-header {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .main-header-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-logo-header img {
+        width: 40px;
+        padding: 4px;
+    }
+
+    .header-title {
+        font-size: 30px;
+    }
+
+    .intro {
+        font-size: 19px;
+    }
+
+    .list-comments {
+        gap: 15px;
+    }
+
+    .list-content p {
+        font-size: 14px;
+    }
+
+    .btn-header {
+        width: 270px;
+    }
+
+    .btn-primary {
+        font-size: 21px;
+    }
+
+    #main-header-panel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .title-large {
+        font-size: 19px
+    }
+
+    .lessons {
+        font-size: 17px;
+    }
+
+    .tasks-steps{
+        font-size: 15px;
+    }
+
+    .notification {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .notification p {
+        max-width: 100%;
+        font-size: 13px;
+    }
+
+    .main {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    #main-header{
+        padding: 10px;
+    }
+
+    .main-header-content {
+        padding: 20px;
+    }
+
+    .list-comments {
+        gap: 5px;
+    }
+
+    .list-comments li {
+        width: 100%;
+    }
+
+    .list-content p{
+        font-size: 10.5px;
+    }
+
+    #main-header-panel {
+        width: 100%;
+    }
+
+    .panel {
+        width: 100%;
+    }
+
+    .title-large {
+        font-size: 13px;
+    }
+
+    .lessons {
+        font-size: 11px;
+    }
+
+    .tasks-steps {
+        font-size: 10.5px;
+    }
+
+    .notification {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .notification p {
+        max-width: 100%;
+        font-size: 8px;
+    }
+
+    .main-title {
+        margin: 0;
+        margin-top: 40px;
+        font-size: 23px;
+    }
+
+    .steps {
+        padding: 30px;
+    }
+
+    .list-steps {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .step-description {
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .main-panel {
+        flex-direction: column;
+        padding: 35px;
+    }
+
+    .profile-title {
+        font-size: 19px;
+    }
+
+    .profile-name {
+        font-size: 19px;
+    }
+
+    .profile-function {
+        font-size: 16px;
+    }
+
+    .learning {
+        margin: 0;
+    }
+
+    .header-panel-secondary {
+        font-size: 19px;
+    }
+
+    .learning-title {
+        font-size: 16px;
+    }
+
+    .learning-description {
+        font-size: 16px;
+    }
+
+    .list-learning {
+        font-size: 14px;
+    }
+
+    .alert {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        height: 100px;
+        margin: 0;
+        margin-top: 30px;
+        gap: 5px;
+    }
+
+    .alert-description {
+        font-size: 15px;
+    }
+
+    .btn-secondary {
+        width: 160px;
+        height: 25px;
+    }
+
+    .btn-secondary p {
+        font-size: 13.3px;
+    }
+
+    .btn-secondary i {
+        font-size: 11px;
+    }
+
+    #footer {
+        padding: 0;
+    }
+
+    .footer-content {
+        width: 480px;
+        padding: 20px;
+        font-size: 13.3px;
+        background-color: #2b323c;
+    }
+
+    .law {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .bar {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header-content {
+        align-items: center;
+        padding: 20px;
+    }
+
+    .img-logo-header img {
+        width: 30px;
+        padding: 3px;
+    }
+
+    .header-title {
+        font-size: 30px;
+    }
+
+    .intro {
+        text-align: center;
+        font-size: 19.2px;
+    }
+
+    .list-comments {
+        gap: 6px;
+    }
+
+    .list-content p {
+        font-size: 10px;
+    }
+
+    .btn-header {
+        width: 270px;
+    }
+
+    .btn-primary {
+        font-size: 21px;
+    }
+
+    #main-header-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panel {
+        width: 300px;
+    }
+
+    .icon {
+        padding-bottom: 8px;
+    }
+
+    .title-large {
+        font-size: 19px;
+    }
+
+    .notification {
+        width: 480px;
+        padding: 20px;
+    }
+
+    .notification p {
+        font-size: 11.2px;
+    }
+
+    .main-title {
+        margin: 0;
+        margin-top: 40px;
+        font-size: 23px;
+    }
+
+    .steps {
+        padding: 30px;
+    }
+
+    .list-steps {
+        gap: 40px;
+    }
+
+    .step-description {
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .main-panel {
+        padding: 35px;
+    }
+
+    .profile-title {
+        font-size: 19px;
+    }
+
+    .profile-name {
+        font-size: 19px;
+    }
+
+    .profile-function {
+        font-size: 16px;
+    }
+
+    .learning {
+        margin: 0;
+    }
+
+    .header-panel-secondary {
+        font-size: 19px;
+    }
+
+    .learning-title {
+        font-size: 16px;
+    }
+
+    .learning-description {
+        font-size: 16px;
+    }
+
+    .list-learning {
+        font-size: 14px;
+    }
+
+    .alert {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        margin-top: 30px;
+        gap: 5px;
+    }
+
+    .alert-description {
+        font-size: 15px;
+    }
+
+    .btn-secondary {
+        width: 160px;
+        height: 25px;
+    }
+
+    .btn-secondary p {
+        font-size: 13.3px;
+    }
+
+    .btn-secondary i {
+        font-size: 11px;
+    }
+
+    #footer {
+        padding: 0;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 480px;
+        padding: 20px;
+        font-size: 13.3px;
+        background-color: #2b323c;
+    }
+
+    .law {
+        font-size: 14px;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .terms {
+        margin-left: 30px;
+    }
+}
